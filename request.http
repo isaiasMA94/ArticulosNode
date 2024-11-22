@@ -1,0 +1,29 @@
+###
+GET http://localhost:9002/api/articulo HTTP/1.1
+Content-Type: application/json
+
+###
+POST http://localhost:9002/api/articulo HTTP/1.1
+Content-Type: application/json
+
+{
+    "codigoArticulo" : "123456",
+    "cantidad" : 1,
+    "descripcion": " Zapatillas",
+    "precio": 30000
+}
+
+###
+GET http://localhost:9002/api/articulo/673bdc556dac2aad8de52b14 HTTP/1.1
+Content-Type: application/json
+
+###
+PUT  http://localhost:9002/api/articulo/673bdc556dac2aad8de52b14 HTTP/1.1
+Content-Type: application/json
+
+{
+    "codigoArticulo" : "123456",
+    "cantidad" : 2,
+    "descripcion": " Zapatillas",
+    "precio": 50000
+}
